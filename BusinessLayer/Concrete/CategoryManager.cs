@@ -10,9 +10,15 @@ namespace BusinessLayer.Concrete
         
         ICategoryDal _categoryDal;
 
+        
         public CategoryManager(ICategoryDal categoryDal)
         {
             _categoryDal = categoryDal;
+        }
+
+        public void Add(Category category)
+        {
+            _categoryDal.Insert(category);
         }
 
         public List<Category> GetList()
