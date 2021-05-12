@@ -1,1 +1,1 @@
-[statisticsControllerImage](https://github.com/dogannahmet/MvcProjeKamp/blob/master/test.jpg)
+[StatisticsControllerImage](https://github.com/dogannahmet/MvcProjeKamp/blob/master/test.jpg)
