@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "StatisticsBox";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+<br />
+<div class="card-deck">
+    <div class="card text-white bg-primary mb-xl-4" style="max-width: 8rem;">
+        <div class="card-header">Toplam Kategori Sayısı</div>
+        <div class="card-body">
+            <h5 class="card-text"> @ViewBag.countOfCategories</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-gradient-success mb-xl-4 " style="max-width: 10rem;">
+        <div class="card-header">Yazılım Kategorisine Ait Başlık Sayısı</div>
+        <div class="card-body">
+            <h5 class="card-text"> @ViewBag.countOfHeadingSoftwareCategory</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-warning mb-xl-4 " style="max-width: 10rem; ">
+        <div class="card-header">Yazar İsimlerinde 'a-A' Harfi Bulunanlar</div>
+        <div class="card-body">
+            <h5 class="card-text"> @ViewBag.countOfWriterLetterAInWriterName</h5>
+        </div>
+    </div>
+    <div class="card-deck">
+        <div class="card text-white bg-gradient-teal mb-xl-4 " style="max-width: 10rem;">
+            <div class="card-header">En Fazla Başlığa Sahip Kategori İsmi</div>
+            <div class="card-body">
+                <h5 class="card-text"> @ViewBag.categoryNameWithMostHeading</h5>
+            </div>
+        </div>
+    </div>
+    <div class="card text-white bg-gradient-maroon mb-xl-4 " style="max-width: 10rem;">
+        <div class="card-header">Kategori Tablosu/True - False Farkı</div>
+        <div class="card-body">
+            <h5 class="card-text"> @ViewBag.categoryStatusTrueOrFalse</h5>
+        </div>
+    </div>
+</div>
+
+
