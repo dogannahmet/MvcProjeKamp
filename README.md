@@ -1,1 +1,1 @@
-[My image](username.github.com/repository/img/test.jpg)
+[My image](https://github.com/dogannahmet/MvcProjeKamp/blob/master/test.jpg)
