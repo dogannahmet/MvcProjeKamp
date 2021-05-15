@@ -4,28 +4,27 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccesLayer.Concrete.Repositories
 {
     public class GenericRepository<T> : IRepository<T> where T : class
 
     {
-        Context c = new Context();
+        Context context = new Context();
         
         // T dğerine karşılık gelen sınıfı bulmak için constructor tanımlaması yapıcaz.
         DbSet<T> _object;
 
         public GenericRepository()
         {
-            _object = c.Set<T>();
+            _object = context.Set<T>();
         }
 
         public void Delete(T p)
         {
-            _object.Remove(p);
-            c.SaveChanges();
+            var deletedEntity = context.Entry(p);
+            deletedEntity.State = EntityState.Deleted;
+            context.SaveChanges();
         }
 
         public T Get(Expression<Func<T, bool>> filter)
@@ -35,8 +34,9 @@ namespace DataAccesLayer.Concrete.Repositories
 
         public void Insert(T p)
         {
-            _object.Add(p);
-            c.SaveChanges();
+            var addedEntity = context.Entry(p);
+            addedEntity.State = EntityState.Added;
+            context.SaveChanges();
         }
 
         public List<T> List()
@@ -51,7 +51,9 @@ namespace DataAccesLayer.Concrete.Repositories
 
         public void Update(T p)
         {
-            c.SaveChanges();
+            var updatedEntity = context.Entry(p);
+            updatedEntity.State = EntityState.Modified;
+            context.SaveChanges();
         }
     }
 }
