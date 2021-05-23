@@ -49,5 +49,6 @@ namespace MvcProjeKamp.Controllers
             headingManager.Add(heading);
             return RedirectToAction("Index");
         }
+
     }
 }
