@@ -87,6 +87,14 @@
     <Compile Include="Migrations\202105231151205_migration_writerAddStatus.designer.cs">
       <DependentUpon>202105231151205_migration_writerAddStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105252159400_migration_addContentStatus.cs" />
+    <Compile Include="Migrations\202105252159400_migration_addContentStatus.designer.cs">
+      <DependentUpon>202105252159400_migration_addContentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105252204004_migration_addHeadingStatus.cs" />
+    <Compile Include="Migrations\202105252204004_migration_addHeadingStatus.designer.cs">
+      <DependentUpon>202105252204004_migration_addHeadingStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -115,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105231151205_migration_writerAddStatus.resx">
       <DependentUpon>202105231151205_migration_writerAddStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105252159400_migration_addContentStatus.resx">
+      <DependentUpon>202105252159400_migration_addContentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105252204004_migration_addHeadingStatus.resx">
+      <DependentUpon>202105252204004_migration_addHeadingStatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
