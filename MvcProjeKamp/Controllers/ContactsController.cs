@@ -20,5 +20,10 @@ namespace MvcProjeKamp.Controllers
             var contactValues = contactManager.GetById(id);
             return View(contactValues);
         }
+
+        public PartialViewResult MessageListBox()
+        {
+            return PartialView();
+        }
     }
 }
