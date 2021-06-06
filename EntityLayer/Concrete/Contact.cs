@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace EntityLayer.Concrete
 {
@@ -16,6 +17,7 @@ namespace EntityLayer.Concrete
         [StringLength(50)]
         
         public string Subject { get; set; }
+        public DateTime ContactDate { get; set; }
         public string Message { get; set; }
 
     }

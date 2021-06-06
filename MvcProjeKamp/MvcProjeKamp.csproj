@@ -313,6 +313,8 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\ContentsController.cs" />
+    <Compile Include="Controllers\ErrorPagesController.cs" />
+    <Compile Include="Controllers\GalleriesController.cs" />
     <Compile Include="Controllers\HeadingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
@@ -344,6 +346,10 @@
     <Content Include="AdminLTE-3.0.4\build\npm\DocsPublish.js" />
     <Content Include="AdminLTE-3.0.4\build\npm\Plugins.js" />
     <Content Include="AdminLTE-3.0.4\build\npm\Publish.js" />
+    <Content Include="AdminLTE-3.0.4\colorlib-error-404-10\css\style.css" />
+    <Content Include="AdminLTE-3.0.4\colorlib-error-404-10\img\bg.jpg" />
+    <Content Include="AdminLTE-3.0.4\colorlib-error-404-10\index.html" />
+    <Content Include="AdminLTE-3.0.4\colorlib-error-404-10\readme.txt" />
     <Content Include="AdminLTE-3.0.4\dist\css\adminlte.css" />
     <Content Include="AdminLTE-3.0.4\dist\css\adminlte.min.css" />
     <Content Include="AdminLTE-3.0.4\dist\css\alt\adminlte.components.css" />
@@ -482,6 +488,8 @@
     <Content Include="AdminLTE-3.0.4\docs\_layouts\home.html" />
     <Content Include="AdminLTE-3.0.4\docs\_layouts\page.html" />
     <Content Include="AdminLTE-3.0.4\docs\_layouts\post.html" />
+    <Content Include="AdminLTE-3.0.4\Images\Galatasaray.jpg" />
+    <Content Include="AdminLTE-3.0.4\Images\soccer-turkey.jpg" />
     <Content Include="AdminLTE-3.0.4\index.html" />
     <Content Include="AdminLTE-3.0.4\index2.html" />
     <Content Include="AdminLTE-3.0.4\index3.html" />
@@ -2478,6 +2486,10 @@
     <Content Include="Views\Messages\Inbox.cshtml" />
     <Content Include="Views\Messages\Sendbox.cshtml" />
     <Content Include="Views\Messages\NewMessage.cshtml" />
+    <Content Include="Views\Messages\GetInboxMessageDetails.cshtml" />
+    <Content Include="Views\Messages\GetSendboxMessageDetails.cshtml" />
+    <Content Include="Views\ErrorPages\Page404.cshtml" />
+    <Content Include="Views\Galleries\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
